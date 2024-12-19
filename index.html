@@ -13,7 +13,7 @@
         <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./img/duck.png" class="figure-img img-fluid w-25" alt="foto duck"></a>
-                <form class="d-flex d-sm-none d-md-none d-lg-inline" role="search">
+                <form class="d-flex d-none d-lg-block" role="search">
                     <input class="form-control me-2 bg-light" type="search" placeholder="Cerca..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Cerca</button>
                   </form>
@@ -34,100 +34,185 @@
     </header>
 
     <main class="container align-items-center mt-4">
+      
+        <div class="d-lg-flex justify-content-between g-3">
+        <div class="col">
         <div class="d-flex justify-content-between p-2 mb-4">
             <h2>
                 Catalogo Libri
             </h2>
             <button class="btn btn-primary" type="submit">Aggiungi Libro</button>
         </div>
-        <div>
+        
         <table class="table table-striped">
-            <thead class="text-center">
-                <tr>
+            <thead class="text-left">
+                <tr class="col">
                   <th scope="col">Titolo</th>
-                  <th scope="col d-sm-none">Data prestito</th>
+                  <th scope="col " class="d-none d-md-block ">Data prestito</th>
                   <th scope="col">Stato</th>
                   <th scope="col">Azioni</th>
                 </tr>
               </thead>  
               <tbody>
-                <tr>
+                <tr class="col">
                   <th scope="row">I pilastri della terra</th>
-                  <td class=" d-sm-none">-</td>
-                  <td class="bg-success rounded-pill text-white text-center">Disponibile</td>
+                  <td class=" d-none d-md-block p-5">-</td>
+                  <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                   <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                 </tr>
                 <tr>
                   <th scope="row">I promessi sposi</th>
-                  <td>-</td>
-                  <td class="bg-success rounded-pill text-white text-center">Disponibile</td>
+                  <td class="d-none d-md-block p-5">-</td>
+                  <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                   <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                 </tr>
                 <tr>
                     <th scope="row">Il signore degli anelli</th>
-                    <td>18/10/2023</td>
-                    <td class="bg-warning rounded-pill text-white text-center">In prestito</td>
+                    <td class="d-none d-md-block p-5">18/10/2023</td>
+                    <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                 </tr>
                 <tr>
                     <th scope="row">Harry Potter e la pietra filosofale</th>
-                    <td>-</td>
-                    <td class="bg-success rounded-pill text-white text-center">Disponibile</td>
+                    <td class="d-none d-md-block p-5">-</td>
+                    <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                     <th scope="row">Il codice Da Vinci</th>
-                    <td>-</td>
-                    <td class="bg-danger rounded-pill text-white text-center">Non Disponibile</td>
+                    <td class="d-none d-md-block p-5">-</td>
+                    <td><span class="badge rounded-pill text-bg-danger">Non Disponibile</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                       <th scope="row">Shining</th>
-                      <td>-</td>
-                      <td class="bg-success rounded-pill text-white text-center">Disponibile</td>
+                      <td class="d-none d-md-block p-5">-</td>
+                      <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                       <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                     <th scope="row">La divina commedia</th>
-                    <td>21/09/2023</td>
-                    <td class="bg-warning rounded-pill text-white text-center">In prestito</td>
+                    <td class="d-none d-md-block p-5">21/09/2023</td>
+                    <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                     <th scope="row">Il trono di spade</th>
-                    <td>-</td>
-                    <td class="bg-success rounded-pill text-white text-center"> Disponibile</td>
+                    <td class="d-none d-md-block p-5">-</td>
+                    <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                       <th scope="row">Il mondo di Sofia</th>
-                      <td>-</td>
-                      <td class="bg-danger rounded-pill text-white text-center">Non Disponibile</td>
+                      <td class="d-none d-md-block p-5">-</td>
+                      <td><span class="badge rounded-pill text-bg-danger">Non Disponibile</span></td>
                       <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                     <th scope="row">Le cronache di Narnia: il Leone, la strega e l'armadio</th>
-                    <td>25/07/2023</td>
-                    <td class="bg-warning rounded-pill text-white text-center">In prestito</td>
+                    <td class="d-none d-md-block p-5">25/07/2023</td>
+                    <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                     <th scope="row">Il piccolo principe</th>
-                    <td>-</td>
-                    <td class="bg-success rounded-pill text-white text-center"> Disponibile</td>
+                    <td class="d-none d-md-block p-5">-</td>
+                    <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                     <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
                   <tr>
                       <th scope="row">La Storia infinita</th>
-                      <td>-</td>
-                      <td class="bg-success rounded-pill text-white text-center">Disponibile</td>
+                      <td class="d-none d-md-block p-5">-</td>
+                      <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                       <td><i class="fa-solid fa-pen border border-dark p-2"></i><span><i class="fa-solid fa-trash-can border border-dark p-2"></i></span></td>
                   </tr>
 
                 
               </tbody> 
         </table>
+    </div>
+  
+        
+        <div class="col m-5">
+
+        
+        <div class="container border border-dark">
+          <h3 class="text-black bg-secondary p-3">
+            Todo
+          </h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+              <label class="form-check-label stretched-link" for="firstCheckboxStretched">Chiamare Segreteria</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+              <label class="form-check-label stretched-link" for="secondCheckboxStretched">Mandare avvisi prestiti scaduti</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+              <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Ordinare nuovi libri</label>
+            </li>
+          </ul>
+
         </div>
+
+        <div class="container border border-dark mt-4 ">
+          <h3 class="text-black bg-secondary p-3">
+            F.A.Q.
+          </h3>
+          <div class="input-group mb-3 gx-5">
+            <button type="button" class="btn">Come aggiungere un nuovo libro?</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            
+          </div>
+          <div class="input-group mb-3">
+            <button type="button" class="btn">Come posso accedere all'anagrafica utenti?</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toogle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            
+          </div>
+          <div class="input-group mb-3">
+            <button type="button" class="btn">Posso usare questa dashboard da mobile?</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            
+          </div>
+
+
+
+        </div>
+      </div>
+  </div>
+          
+          
+          
+      
     </main>
     
 
